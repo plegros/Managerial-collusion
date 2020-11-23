@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{One sided communication}
+\author{}
+\date{April 2020}
+
+\begin{document}
+
+\maketitle
+
+\section{Manager's problem}
+Let's assume that firm $i$ is the leader and can send a message in period $1$. We are looking at the separating equilibrium where type $0$ never communicates and type $\delta$ always communicates.
+
+If type of the manager $i$ is $0$ then there is no communication and both managers play $p^c$.
+
+If type of the manager $i$ is $\delta$, then the manager send the message. Let's define the collusive prices of period $1$ as $(\tilde{p}_i, \tilde{p}_j)$, when both managers are collusive types. If type of manager $j$ is $0$, then the manager chooses its best respond to $\tilde{p}_i$.
+\begin{equation}
+    \tilde{p}_j^d = arg \max_{p} b_j e_j \pi(p,\tilde{p}_i)-\frac{e_i^2}{2}.
+\end{equation}
+As, $e_j=b_j \pi(p,\tilde{p}_i)$ is optimal effort level, the problem is equivalent to
+\begin{equation}
+    \tilde{p}_j^d = arg \max_{p} \pi(p,\tilde{p}_i).
+\end{equation}
+
+Now the problem is how the managers coordinate their actions if both are type $1$. We cannot assume that they choose their actions such that they maximize their joint profits: $$[\alpha(b_i e_i \pi(\tilde{p}_i, \tilde{p}_j)-e_i^2/2)+(1-\alpha)(b_i e_i \pi(\tilde{p}_i, \tilde{p}_j^d)-e_i^2/2)]+[b_j e_j \pi(\tilde{p}_j, \tilde{p}_i)-e_j^2/2]$$, where the first square bracket is the profit of manager $i$, while the second one is the profit of $j$. The solution of the problem will not depend on the effort levels, but will depend on the bonus levels $b_i$ and $b_j$. To avoid this, we introduced the Nash bargaining in the paper. We can still assume that, the managers choose their actions such that they split the joint surplus as they would Nash bargain:
+$$[\alpha(b_i e_i \pi(\tilde{p}_i, \tilde{p}_j)-e_i^2/2)+(1-\alpha)(b_i e_i \pi(\tilde{p}_i, \tilde{p}_j^d)-e_i^2/2)-(\pi^c)^2/2]\cdot[b_j e_j \pi(\tilde{p}_j, \tilde{p}_i)-e_j^2/2-(\pi^c)^2/2]$$
+We can rewrite the problem as
+\begin{equation}
+    [(1-\delta)(\alpha\pi(\tilde{p}_i, \tilde{p}_j)+(1-\alpha)\pi(\tilde{p}_i, \tilde{p}_j^d))^2+\delta(\pi^M)^2-(\pi^c)^2]\cdot[(1-\delta)(\pi(\tilde{p}_j, \tilde{p}_i)^2+\delta(\pi^M)^2-(\pi^c)^2]
+\end{equation}
+s.t. IC conditions:
+Manager $i$ type $\delta$
+\begin{equation}
+    \frac{b_i}{2}(\alpha\pi(\tilde{p}_i, \tilde{p}_j)+(1-\alpha)\pi(\tilde{p}_i, \tilde{p}_j^d))^2 + \frac{\delta}{1-\delta} \frac{b_i}{2} (\pi^M)^2 - f> \frac{b_i}{2(1-\delta)} (\pi^c)^2
+\end{equation}
+Manager $j$ type $\delta$
+\begin{equation}
+    \frac{b_j}{2}(\pi(\tilde{p}_j, \tilde{p}_i))^2 + \frac{\delta}{1-\delta} \frac{b_j}{2} (\pi^M)^2 > \frac{b_j}{2(1-\delta)} (\pi^c)^2
+\end{equation}
+Note that manager $j$'s IC condition is independent of $b_j$.
+Manager $i$ type $0$.
+\begin{equation}
+   \frac{b_i}{2} (\pi^c)^2 > \frac{b_i}{2}(\alpha\pi(\tilde{p}^d_i, \tilde{p}_j)+(1-\alpha)\pi(\tilde{p}^d_i, \tilde{p}_j^d))^2 - f. 
+\end{equation}
+Again we have upper and lower bounds of the fines.
+
+\section{Owner's problem}
+As manager $j$'s IC condition is independent of $b_j$, $b_j = 1/2$.
+
+Owner $i$'s problem:
+\begin{equation}\label{prog:owners}
+\max_{b} b_i (1-b_i) \big[\alpha^2 ((1-\delta)\pi(\tilde{p}_j, \tilde{p}_i) + \delta \pi^M)^2 + (1-\alpha^2) (\pi^c)^2\big]- \alpha (1-\delta)F
+\end{equation}
+s.t. bonuses are such that IC condition hold.
+
+Again we will have IC conditions for the owner which will define the upper and lower bounds of $F$.
+
+\end{document}

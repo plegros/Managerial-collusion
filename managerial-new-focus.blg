@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: managerial-new-focus.aux
+The style file: agsm.bst
+Database file #1: collusion.bib
+You've used 46 entries,
+            2909 wiz_defined-function locations,
+            937 strings with 11501 characters,
+and the built_in function-call counts, 144448 in all, are:
+= -- 23041
+> -- 1836
+< -- 0
++ -- 10531
+- -- 546
+* -- 12156
+:= -- 29708
+add.period$ -- 46
+call.type$ -- 46
+change.case$ -- 641
+chr.to.int$ -- 46
+cite$ -- 46
+duplicate$ -- 777
+empty$ -- 1593
+format.name$ -- 716
+if$ -- 25861
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 49
+newline$ -- 141
+num.names$ -- 466
+pop$ -- 177
+preamble$ -- 1
+purify$ -- 690
+quote$ -- 0
+skip$ -- 668
+stack$ -- 0
+substring$ -- 32070
+swap$ -- 169
+text.length$ -- 644
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 178
+warning$ -- 0
+while$ -- 1034
+width$ -- 0
+write$ -- 566
